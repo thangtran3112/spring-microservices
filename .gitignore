@@ -27,3 +27,4 @@ replay_pid*
 .idea/spring-microservices.iml
 .idea/vcs.xml
 .idea/workspace.xml
+.DS_Store
