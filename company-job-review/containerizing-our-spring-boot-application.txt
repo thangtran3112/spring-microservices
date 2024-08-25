@@ -2,3 +2,5 @@
 
 
 ./mvnw spring-boot:build-image "-Dspring-boot.build-image.imageName=thangtran3112/jobappimage"
+
+docker push thangtran3112/jobappimage
