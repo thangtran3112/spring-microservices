@@ -60,3 +60,7 @@ dpage/pgadmin4
 docker-compose up -d
 docker logs <CONTAINER_NAME>
 ```
+
+* Accessing the pgAdmin service at http://localhost:5050
+* Connecting to Postgres service from pgAdmin can use docker dns, in this case it is `postgres` service
+![pgAdmin Container to Postgres Container](./images/pgAdminContainerConnection.png)
