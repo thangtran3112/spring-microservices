@@ -146,29 +146,45 @@
 			"name": "Reviews",
 			"item": [
 				{
-					"name": "/companies/{id}/reviews",
+					"name": "/reviews?companyId={companyId}",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/companies/1/reviews"
+						"url": {
+							"raw": "http://localhost:8083/reviews?companyId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				},
 				{
-					"name": "/companies/{id}/reviews/{reviewId}",
+					"name": "reviews/{reviewId}",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/companies/1/reviews"
+						"url": "http://localhost:8083/reviews/1"
 					},
 					"response": []
 				},
 				{
-					"name": "/companies/{id}/reviews/{reviewId}",
+					"name": "/reviews/{reviewId}",
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/companies/1/reviews/1"
+						"url": "http://localhost:8083/reviews/1"
 					},
 					"response": []
 				},
@@ -179,19 +195,19 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"title\" : \"Review Edited\",\n    \"description\" : \"Description Edited\",\n    \"rating\" : 1.0\n}",
+							"raw": "{\n    \"title\" : \"Review Edited\",\n    \"description\" : \"Description Edited\",\n    \"rating\" : 1.0,\n    \"companyId\" : 2\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "http://localhost:8083/companies/1/reviews/1"
+						"url": "http://localhost:8083/reviews/1"
 					},
 					"response": []
 				},
 				{
-					"name": "/companies/{id}/reviews",
+					"name": "/reviews?companyId={companyId}",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -204,7 +220,23 @@
 								}
 							}
 						},
-						"url": "http://localhost:8083/companies/1/reviews"
+						"url": {
+							"raw": "http://localhost:8083/reviews?companyId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "1"
+								}
+							]
+						}
 					},
 					"response": []
 				}
