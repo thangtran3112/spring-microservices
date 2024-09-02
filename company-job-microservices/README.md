@@ -23,3 +23,27 @@ zipkin:
 ```
 
 - Using docker compose: `docker-compose up -d`
+
+- Zipkin, in Production we should not track every request with probability 1.0
+
+## Micrometer
+
+- Micrometer provide metrics collection for your applications
+- Micrometer is vendor agnostic, it abstracts all the metrics from your application with integrations to various cloud providers, such as Datadog, Prometheus, New Relic, Grafana, etc.
+
+## If using with OpenFeign, need extra dependency
+
+```pom.xml
+  <dependency>
+    <groupId>io.micrometer</groupId>
+    <artifactId>micrometer-tracing-bridge-brave</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>io.zipkin.reporter2</groupId>
+    <artifactId>zipkin-reporter-brave</artifactId>
+  </dependency>
+  <dependency>
+    <groupId>io.github.openfeign</groupId>
+    <artifactId>feign-micrometer</artifactId>
+  </dependency>
+```
