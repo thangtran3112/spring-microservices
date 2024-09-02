@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "ff7cc96e-287f-46be-912c-7522081ad153",
+		"name": "SpringJobGateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20378199"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "/companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8084/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "/companies/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8084/companies/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/companies",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Company 1\",\n    \"description\": \"Description 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8084/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "/companies/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Updated Company 1\",\n    \"description\": \"Updated Description 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8084/companies/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/companies/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8084/jobs/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "/jobs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"first\",\n    \"description\": \"first Job\",\n    \"minSalary\": \"23232323\",\n    \"maxSalary\": \"222222222\",\n    \"location\": \"Hanoi\",\n    \"companyId\" : 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8084/jobs"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Second\",\n    \"description\": \"Second Job\",\n    \"minSalary\": \"1111111\",\n    \"maxSalary\": \"33333333\",\n    \"location\": \"London\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8084/jobs/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8084/jobs"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8084/jobs/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/jobs/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8084/jobs/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "/reviews?companyId={companyId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/reviews?companyId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviews/{reviewId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8084/reviews/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/reviews/{reviewId}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8084/reviews/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/companies/{id}/reviews/{reviewId}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Review Edited\",\n    \"description\" : \"Description Edited\",\n    \"rating\" : 1.0,\n    \"companyId\" : 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8084/reviews/1"
+					},
+					"response": []
+				},
+				{
+					"name": "/reviews?companyId={companyId}",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Review 1\",\n    \"description\" : \"Description 1\",\n    \"rating\" : 2.0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/reviews?companyId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"reviews"
+							],
+							"query": [
+								{
+									"key": "companyId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

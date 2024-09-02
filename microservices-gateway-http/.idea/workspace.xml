@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c9eb97df-4333-4a59-b626-8368db9271e3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/CompanymsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/CompanyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/CompanyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/CompanyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/java/com/embarkx/companyms/company/impl/CompanyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/companyms/src/test/java/com/embarkx/companyms/CompanymsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/src/main/java/com/embarkx/configserver/ConfigserverApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/configserver/src/test/java/com/embarkx/configserver/ConfigserverApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/docker-compose.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/JobController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/JobRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/JobService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/JobmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/clients/CompanyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/clients/ReviewClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/dto/JobDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/external/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/external/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/impl/JobServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/java/com/embarkx/jobms/job/mapper/JobMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/jobms/src/test/java/com/embarkx/jobms/JobmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/ReviewmsApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/review/Review.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/review/ReviewController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/review/ReviewRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/review/ReviewService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/java/com/embarkx/reviewms/review/impl/ReviewServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/reviewms/src/test/java/com/embarkx/reviewms/ReviewmsApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/src/main/java/com/embarkx/service_reg/ServiceRegApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../company-job-microservices/service-reg/src/test/java/com/embarkx/service_reg/ServiceRegApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2l2urzsf2Wl9xvUAwIH8a4hFZH9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FirstjobappApplication.executor": "Run",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/thangtran/spring-microservices/microservices-advanced",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.embarkx.firstjobapp.job" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FirstjobappApplication">
+    <configuration name="FirstjobappApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.embarkx.firstjobapp.FirstjobappApplication" />
+      <module name="firstjobapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.embarkx.firstjobapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FirstjobappApplication" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c9eb97df-4333-4a59-b626-8368db9271e3" name="Changes" comment="" />
+      <created>1724390694187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724390694187</updated>
+    </task>
+    <servers />
+  </component>
+</project>
