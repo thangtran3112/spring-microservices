@@ -1,5 +1,6 @@
 package com.embarkx.reviewms.review;
 
+import com.embarkx.reviewms.review.messaging.ReviewMessageProducer;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,9 +11,11 @@ import java.util.List;
 @RequestMapping("/reviews")
 public class ReviewController {
     private ReviewService reviewService;
+    private ReviewMessageProducer reviewMessageProducer;
 
-    public ReviewController(ReviewService reviewService) {
+    public ReviewController(ReviewService reviewService, ReviewMessageProducer reviewMessageProducer) {
         this.reviewService = reviewService;
+        this.reviewMessageProducer = reviewMessageProducer;
     }
 
     /** GET /reviews?companyId={companyId} */
@@ -27,12 +30,14 @@ public class ReviewController {
     public ResponseEntity<String> addReview(@RequestParam Long companyId,
                                             @RequestBody Review review){
         boolean isReviewSaved = reviewService.addReview(companyId, review);
-        if (isReviewSaved)
+        if (isReviewSaved) {
+            reviewMessageProducer.sendMessage(review);
             return new ResponseEntity<>("Review Added Successfully",
                     HttpStatus.OK);
-        else
+        } else {
             return new ResponseEntity<>("Review Not Saved",
                     HttpStatus.NOT_FOUND);
+        }
     }
 
     /** GET /reviews/{reviewId} */
@@ -68,5 +73,11 @@ public class ReviewController {
         else
             return new ResponseEntity<>("Review not deleted",
                     HttpStatus.NOT_FOUND);
+    }
+
+    @GetMapping("/averageRating")
+    public Double getAverageReview(@RequestParam Long companyId) {
+        List<Review> reviewList = reviewService.getAllReviews(companyId);
+        return reviewList.stream().mapToDouble(Review::getRating).average().orElse(0.0);
     }
 }
