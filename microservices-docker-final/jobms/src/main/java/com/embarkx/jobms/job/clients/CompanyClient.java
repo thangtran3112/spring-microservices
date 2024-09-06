@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  * Pick up the company-service url from the application.properties
- * or application.docker.properties based on Spring profile
+ * or application-docker.properties based on Spring profile
  * */
 @FeignClient(name = "COMPANY-SERVICE", url = "${company-service.url}")
 public interface CompanyClient {

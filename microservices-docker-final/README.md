@@ -106,6 +106,10 @@ This will require `jdk` path to be set in .zshrc
 
 ## Troubleshoot
 
+- Make sure the database must be up and running first, before dockerize other services. Otherwise, config-server-ms and gateway-ms will not grab the correct configurations.
+
+- Make sure to match `- SPRING_PRO`FILES_ACTIVE=docker in `docker-compose.yaml` with `application-docker.properties` of the corresponding service
+
 - If Port 5432 is in use, by other applications, other other postgres containers:
 
 ```bash
