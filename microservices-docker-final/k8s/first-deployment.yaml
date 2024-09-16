@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: myapp
+          image: myapp:1.0
+          resources:
+            limits:
+              cpu: "1"
+              memory: "512Mi"
+            requests:
+              cpu: "0.5"
+              memory: "256Mi"
+## Deployment can rolling out update for service and replica sets
+## template metadata contains instructions on how containers are created
+## Different from ReplicaSet, Deployment will handle rolling out updates and rollback
+## if the update fails
+
+# kubectl apply -f first-deployment.yaml
+# kubectl get deployments
+# kubectl describe deployment my-deployment
+# kubectl logs my-deployment-<pod-id>
