@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: MyApp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
+# Service is used to expose a deployment to the outside world
+# kubectl apply -f first-service.yaml
+# kubectl get services
