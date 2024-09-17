@@ -116,3 +116,33 @@ This will require `jdk` path to be set in .zshrc
 sudo launchctl list | fgrep postg
 kill -9 <PID>
 ```
+
+## K8S with minikube
+
+```bash
+  kubectl apply -f ./k8s/services/postgres/
+```
+
+- Creating databases for our application, running the command into the container:
+
+```bash
+  minikube stop
+  minikube start
+  kubectl exec -it postgres-0 -- psql -U embarkx
+```
+
+```psql
+  \list
+  create database job;
+  create database review;
+  create database company;
+```
+
+The part after `--` will be the commandline, to be executed inside the container.
+In this case, it is `psql -U embarkx`
+
+```bash
+  kubectl apply -f ./k8s/bootstrap
+```
+
+- Run `kubectl apply -f ./k8s/bootstrap` to run all deployment yaml files within `bootstrap` folder
