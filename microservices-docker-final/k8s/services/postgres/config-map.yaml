@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  POSTGRES_DB: embarkx
+  POSTGRES_USER: embarkx
+  POSTGRES_PASSWORD: embarkx
+# kubeclt get all
+# kubectl delete deployment --all --all-namespaces
+# kubectl delete replicasets --all --all-namespaces
+
