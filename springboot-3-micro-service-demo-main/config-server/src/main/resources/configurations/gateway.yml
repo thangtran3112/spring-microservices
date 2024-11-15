@@ -1,6 +1,6 @@
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: false # Optional, we can also register gateway with Eureka
 server:
   port: 8222
 spring:

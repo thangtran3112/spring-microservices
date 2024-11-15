@@ -1,9 +1,5 @@
 # Microservices Demo Project
 
-#### by Alibou (https://aliboucoding.com/courses)
-
-![alt text](diagram.png)
-
 This repository contains a demo project showcasing a microservices-based application, designed to provide a hands-on understanding of microservices architecture and implementation. The project consists of an API Gateway, Config Server, Discovery Server, and two microservices: Student and School.
 
 ## Table of Contents
@@ -89,14 +85,6 @@ Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) fo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-[Ali Bouali] - [contact@aliboucoding.com]
-
-[Website] - [https://aliboucoding.com/courses]
-
-Project Link: https://github.com/ali-bouali/springboot-3-micro-service-demo
 
 ## Acknowledgements
 
