@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: myapp:1.0
+          image: nginx:1.14.2
           resources:
             limits:
               cpu: "1"
